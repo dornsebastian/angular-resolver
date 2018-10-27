@@ -1,0 +1,8 @@
+<mat-card>
+  <mat-card-title>Delay</mat-card-title>
+  <mat-card-content>
+    <ul>
+      <li *ngFor="let o of (activatedRoute.data | async)?.item">{{o}}</li>
+    </ul>
+  </mat-card-content>
+</mat-card>

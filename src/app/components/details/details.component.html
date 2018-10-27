@@ -1,0 +1,15 @@
+<mat-card>
+  <code>
+    <pre>{{(activatedRoute.data | async)?.item | json }}</pre>
+  </code>
+
+
+  <div class="example-button-row">
+    <button mat-raised-button color="primary" routerLink="./delay">Delay (1.5s)</button>
+    <button mat-raised-button color="primary" routerLink="./partial">Partial (1.5s)</button>
+    <button mat-raised-button color="primary" routerLink="./matrjoschka">Matrjoschka (1s)</button>
+    <button mat-raised-button color="accent" routerLink="/">Back</button>
+  </div>
+</mat-card>
+
+<router-outlet></router-outlet>

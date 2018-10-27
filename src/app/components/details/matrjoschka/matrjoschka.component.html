@@ -1,0 +1,14 @@
+<mat-card>
+  <mat-card-title>Matrjoschka</mat-card-title>
+  <mat-card-content>
+    <ul>
+      <li>Error on 19</li>
+      <li>3 retries after 2s, 4s, 6s</li>
+      <li>afterwards redirect to '/page-not-found'</li>
+    </ul>
+    <p *ngIf="loading">Data is loading</p>
+    <ul>
+      <li *ngFor="let o of activatedRoute.snapshot.data?.item | async">{{o}}</li>
+    </ul>
+  </mat-card-content>
+</mat-card>
